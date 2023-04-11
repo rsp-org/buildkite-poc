@@ -1,4 +1,3 @@
 steps:
-- label: ":hammer::golang: Example Script"
-  command: "script.sh"
-
+  - label: ":hammer: Example Script"
+    command: "script.sh"
