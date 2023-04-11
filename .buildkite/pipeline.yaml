@@ -1,4 +1,4 @@
 steps:
 - label: ":hammer::golang: Example Script"
-  command: ls app
+  command: "script.sh"
 
