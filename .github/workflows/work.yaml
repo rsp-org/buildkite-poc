@@ -1,8 +1,9 @@
 name: 'Simple'
 
 on:
-  workflow_dispatch:
-
+  repository_dispatch:
+    types:
+      - buildkite
 jobs:
   simple:
     runs-on: 
