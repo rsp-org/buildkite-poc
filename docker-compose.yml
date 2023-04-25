@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   agent:
+    privileged: true
     build:
       context: ./agent
     environment:

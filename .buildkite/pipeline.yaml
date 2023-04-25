@@ -3,7 +3,7 @@ steps:
     command: "script.sh"
 
   - label: ":golang: Golang build"
-    command: go build ./app
+    command: go build ./app/main.go
     plugins:
       - golang#v2.0.0:
           version: 1.20.2
