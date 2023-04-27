@@ -6,6 +6,7 @@ This is a simple example of how you can trigger github actions from buildkite
 
 - BUILDKITE_AGENT_TOKEN
 - GITHUB_TOKEN
+- ID_RSA_PATH (path to your id_rsa file - used to clone the repo)
 
 
 ## Steps
@@ -15,6 +16,7 @@ This is a simple example of how you can trigger github actions from buildkite
 ```sh
 export BUILDKITE_AGENT_TOKEN=XXXX
 export GITHUB_TOKEN=YYYYY
+export ID_RSA_PATH=~/.ssh/id_rsa
 ```
 
 ### Start buildkite agent
