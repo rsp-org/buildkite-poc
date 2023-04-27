@@ -27,8 +27,6 @@ if r.status_code == 200 or r.status_code == 204:
 
     result = r.json()
 
-    print(result)
-
     for workflow_run in result['workflow_runs']:
         id = workflow_run['id']
         status = workflow_run['status']
@@ -44,7 +42,7 @@ if r.status_code == 200 or r.status_code == 204:
                 result = r.json()
 
                 pending = result['status'] == 'queued' or result['status'] == "in_progress"
-                
+    print("Workflows finished")           
 else:
     print("error")
     print(r.status_code)
