@@ -11,6 +11,7 @@ headers = {
     "authorization": f"token {github_token}",
     "Content-Type": "application/json"
 }
+print(headers)
 r = requests.post(f"https://api.github.com/repos/{github_owner}/{github_repo}/dispatches", data=json.dumps({
     "event_type": "buildkite"
 }), headers=headers)
