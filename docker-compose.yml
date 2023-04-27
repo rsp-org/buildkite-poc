@@ -11,7 +11,7 @@ services:
       GITHUB_REPO: buildkite-poc
       GITHUB_TOKEN: ${GITHUB_TOKEN}
     volumes:
-      - ~/.ssh/id_rsa-personal:/root/.ssh/id_rsa:ro
+      - {ID_RSA_PATH}:/root/.ssh/id_rsa:ro
     networks:
       - buildkite
 networks:
