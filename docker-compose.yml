@@ -7,5 +7,13 @@ services:
       context: ./agent
     environment:
       BUILDKITE_AGENT_TOKEN: ${BUILDKITE_AGENT_TOKEN}
+      GITHUB_OWNER: rsp-org
+      GITHUB_REPO: buildkite-poc
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
     volumes:
       - ~/.ssh/id_rsa-personal:/root/.ssh/id_rsa:ro
+    networks:
+      - buildkite
+networks:
+  buildkite:
+    driver: bridge

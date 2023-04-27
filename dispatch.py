@@ -4,8 +4,8 @@ import time
 import json
 
 github_token = os.environ.get("GITHUB_TOKEN", "")
-github_owner = "rsp-org"
-github_repo = "buildkite-poc"
+github_owner = os.environ.get("GITHUB_OWNER", "rsp-org")
+github_repo = os.environ.get("GITHUB_REPO", "buildkite-poc")
 
 headers = {
     "authorization": f"token {github_token}",
