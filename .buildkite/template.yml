@@ -1,4 +1,5 @@
-name: "Setup"
+name: "Bash Example"
+description: "An example repository you can use as a test project with Buildkite"
 steps:
-  - label: ":pipeline:"
-    command: "buildkite-agent pipeline upload"
+  - command: "buildkite-agent pipeline upload"
+    label: ":pipeline:"
