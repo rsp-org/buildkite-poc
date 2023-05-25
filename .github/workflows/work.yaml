@@ -8,6 +8,7 @@ on:
 jobs:
   simple:
     runs-on: 
+      - self-hosted
       - "renan"
     steps:
       - name: Checkout
