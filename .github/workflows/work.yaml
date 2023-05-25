@@ -1,13 +1,14 @@
 name: 'Simple'
 
 on:
+  workflow_dispatch: 
   repository_dispatch:
     types:
       - buildkite
 jobs:
   simple:
     runs-on: 
-      - "ubuntu-latest"
+      - "renan"
     steps:
       - name: Checkout
         uses: actions/checkout@v3
